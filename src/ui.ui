@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>175</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(191, 64, 64, 0);
+border-radius: 5;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">border-radius: 5;</string>
+   </property>
+   <widget class="QLabel" name="city_lb">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font Mono</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;</string>
+    </property>
+    <property name="text">
+     <string>Город: </string>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="temp_c_lb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>35</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font Mono</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;</string>
+    </property>
+    <property name="text">
+     <string>Температура °C: </string>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="temp_f_lb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>70</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font Mono</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;</string>
+    </property>
+    <property name="text">
+     <string>Температура ℉: </string>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wind_vel_lb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>105</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font Mono</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;</string>
+    </property>
+    <property name="text">
+     <string>Скорость ветра, м/с: </string>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wind_rumb_lb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>140</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font Mono</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;</string>
+    </property>
+    <property name="text">
+     <string>Направление ветра:</string>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="temp_c_out_lb">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>35</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="temp_f_out_lb">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>70</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wind_vel_out_lb">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>105</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wind_rumb_out_lb">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>140</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="city_inp_le">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>200</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UbuntuMono Nerd Font</family>
+      <pointsize>12</pointsize>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #12c7a3;
+color: #3f4d4a;
+border: 1px solid #118c74;
+border-radius: 5;</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>temp_c_lb</zorder>
+   <zorder>wind_vel_out_lb</zorder>
+   <zorder>city_lb</zorder>
+   <zorder>temp_f_lb</zorder>
+   <zorder>wind_vel_lb</zorder>
+   <zorder>wind_rumb_lb</zorder>
+   <zorder>temp_c_out_lb</zorder>
+   <zorder>temp_f_out_lb</zorder>
+   <zorder>wind_rumb_out_lb</zorder>
+   <zorder>city_inp_le</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
