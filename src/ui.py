@@ -173,7 +173,6 @@ class Ui_MainWindow(object):
         self.temp_f_lb.setText(_translate("MainWindow", "Температура ℉: "))
         self.wind_vel_lb.setText(_translate("MainWindow", "Скорость ветра, м/с: "))
         self.wind_rumb_lb.setText(_translate("MainWindow", "Направление ветра:"))
-        #self.city_inp_le.setText(_translate("MainWindow", "Казань"))
 
 
 if __name__ == "__main__":

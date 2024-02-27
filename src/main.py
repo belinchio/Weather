@@ -14,7 +14,7 @@ class Main(QtWidgets.QMainWindow):
 
     def init_UI(self):
         self.setWindowTitle("Погода")
-        self.setWindowIcon(QIcon('src/image/weather.png'))
+        self.setWindowIcon(QIcon('/src/images/weather.png'))
 
         self.ui.city_inp_le.setPlaceholderText("Введите город")
         self.ui.city_inp_le.editingFinished.connect(lambda: self.show_weather())
@@ -65,7 +65,7 @@ class Main(QtWidgets.QMainWindow):
 
         self.ui.temp_c_out_lb.setText(str(temp_c))
         self.ui.temp_f_out_lb.setText(str(temp_f))
-        self.ui.wind_vel_out_lb.setText(str(wind_mph))
+        self.ui.wind_vel_out_lb.setText(str(round(wind_mph * 0.44704)))
         self.ui.wind_rumb_out_lb.setText(wind_direction)
 
 
