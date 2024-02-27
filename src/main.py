@@ -14,7 +14,7 @@ class Main(QtWidgets.QMainWindow):
 
     def init_UI(self):
         self.setWindowTitle("Погода")
-        self.setWindowIcon(QIcon('/src/images/weather.png'))
+        self.setWindowIcon(QIcon('weather.png'))
 
         self.ui.city_inp_le.setPlaceholderText("Введите город")
         self.ui.city_inp_le.editingFinished.connect(lambda: self.show_weather())
